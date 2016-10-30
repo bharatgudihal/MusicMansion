@@ -23,10 +23,14 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
+	UFUNCTION(BlueprintCallable, Category = "CameraElevator")
+	void SetTargetUp();
+
+	UFUNCTION(BlueprintCallable, Category = "CameraElevator")
+	void SetTargetDown();
+
 private:
 	void MoveIntoPlace();
-	void SetTargetUp();
-	void SetTargetDown();
 	
 
 	int targetFloor=0;
