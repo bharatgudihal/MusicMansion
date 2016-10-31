@@ -44,8 +44,8 @@ void ACameraElevator::SetupPlayerInputComponent(class UInputComponent* i_InputCo
 {
 	Super::SetupPlayerInputComponent(i_InputComponent);
 	UE_LOG(LogTemp, Log, TEXT("SETUP!"));
-	i_InputComponent->BindAction("SetTargetUp", IE_Pressed, this, &ACameraElevator::SetTargetUp);
-	i_InputComponent->BindAction("SetTargetDown", IE_Pressed, this, &ACameraElevator::SetTargetDown);
+	//i_InputComponent->BindAction("SetTargetUp", IE_Pressed, this, &ACameraElevator::SetTargetUp);
+	//i_InputComponent->BindAction("SetTargetDown", IE_Pressed, this, &ACameraElevator::SetTargetDown);
 }
 
 void ACameraElevator::SetTargetUp() {	
